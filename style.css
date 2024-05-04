@@ -57,10 +57,9 @@ body{
 }
 
 .img img{
-    height: 23em;
-    width: 20em;
-    border-radius: 10px;
-    border-radius: 50%;
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
     transition: all 0.6s ease;
 }
 .container img:hover{
@@ -92,6 +91,7 @@ body{
     background-color: rgba(12, 66, 228, 0.479);
     color:whitesmoke;
     font-size: 1em;
+    cursor: pointer;
 }
 .greeting:hover{
     box-shadow: 1px 1px 10px rgb(6, 24, 228);
