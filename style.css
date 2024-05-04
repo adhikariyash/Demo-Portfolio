@@ -55,18 +55,18 @@ body{
 .high{
     color:rgb(111, 214, 111);
 }
-.img{
+.indexImg{
     border-radius: 50%;
     cursor: pointer;
 }
-.img img{
+.indexImg img{
    height: 20rem;
    width: 20rem;
    object-fit: cover;
     transition: all 0.6s ease;
     border-radius: 50%;
 }
-img:hover{
+.indexImg img:hover{
     border-radius: 10%;
 }
 .information{
@@ -87,6 +87,12 @@ img:hover{
     margin-left: 1em;
     justify-content: center;
 }
+.indexLinks{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
 .greeting{
     padding: 0.8em 2em;
     margin-top: 1em;
@@ -106,7 +112,7 @@ img:hover{
         gap: 1.5rem;
         transition: all 0.3 s ease;
     }
-    .img img{
+    .indexImg img{
         height: 15rem;
         width: 15rem;
     }
@@ -120,7 +126,8 @@ img:hover{
         flex-direction: column-reverse;
        
     }
-    .img{
+    .indexImg{
+        
        margin-top: 2em;
     
     }
@@ -130,7 +137,7 @@ img:hover{
     .information p{
         text-align: center;
     }
-    .img img{
+  .indexImg img{
         height: 15rem;
         width: 15rem;
     }
@@ -150,9 +157,14 @@ img:hover{
     .skill-list{
         font-size: 0.7rem;
     }
+    .indexLinks{
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+    }
 }
 @media (max-width: 295px){
-    .img img{
+    .indexImg img{
         height: 15rem;
         width: 15rem;
     }

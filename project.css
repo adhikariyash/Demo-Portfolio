@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;700&display=swap');
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+.projectMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7em;
+    margin-bottom: 2em;
+}
+.projectMain h1{
+    color:white;
+    font-family: merriweather;
+  border-bottom:2px solid white;
+  padding: 0.3em;
+
+}
+.projects{
+    margin-top: 5em;
+    display:grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 3em;
+    color:white;
+    text-align: center;
+}
+.projects img{
+    height: 13em;
+}
+.projects img:hover{
+ border: 3px solid yellow;
+ box-shadow: 2px 3px 10px rgb(8, 201, 236);
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+}
+.projectOne{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+}
+.projectOne h2{
+font-size: clamp(0.6rem, 2.5vw, 1.5rem);  
+}
+.projectTwo{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+}
+.projectTwo h2{
+font-size: clamp(0.6rem, 2.5vw, 1.5rem);  
+}
+.projectThree{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+}
+.projectThree h2{
+font-size: clamp(0.6rem, 2.5vw, 1.5rem);  
+}
+.projectFour{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+}
+.projectFour h2{
+font-size: clamp(0.6rem, 2.5vw, 1.5rem);
+}
