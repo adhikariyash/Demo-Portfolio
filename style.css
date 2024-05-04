@@ -28,7 +28,7 @@ body{
 }
 .navlist li a{
     text-decoration: none;
-    font-size: clamp(1rem, 2.5vw, 1.7rem); 
+    font-size: clamp(1.1rem, 2.5vw, 2rem); 
     color:white;
     background-color: rgba(40, 36, 36, 0.208);
     padding: 0.3em 1.2em;
@@ -37,9 +37,7 @@ body{
 .navlist li a:hover{
     box-shadow: 2px 1px 10px rgb(215, 215, 220);
 }
-.hidden{
-    display:flex;
-}
+
 
 
 /* navbar */
@@ -52,6 +50,7 @@ body{
     padding: 1em;
     height: 100vh;
     height: 100svh;
+
 }
 .high{
     color:rgb(111, 214, 111);
@@ -119,8 +118,7 @@ img:hover{
     .container{
         gap: 1rem;
         flex-direction: column-reverse;
-        margin-top: 0px;
-        height: fit-content;
+       
     }
     .img{
        margin-top: 2em;
