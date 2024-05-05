@@ -14,10 +14,10 @@ body{
 }
 .navbar{
     display:flex;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
     position: sticky;
-    padding: 10px;
+    padding: 20px;
 }
 .navlist{
     display:flex;
@@ -103,6 +103,7 @@ body{
     font-size: 1em;
     cursor: pointer;
     text-decoration: none;
+   
 }
 .greeting:hover{
     box-shadow: 1px 1px 10px rgb(6, 24, 228);
