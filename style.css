@@ -39,6 +39,14 @@ body,html{
     background-color: rgba(40, 36, 36, 0.208);
     padding: 0.3em 1.2em;
     border-radius: 10px;
+    display: flex;
+  gap: 0.5em;
+  justify-content: center;
+  align-items: center;
+}
+.navlist li a svg{
+    fill:white;
+    height: 2rem;
 }
 .navlist li a:hover{
     box-shadow: 2px 1px 10px rgb(215, 215, 220);
@@ -85,6 +93,7 @@ body,html{
 }
 .information p{
     width: 60ch;
+    color: #e5e4e4
  
 }
 .skill-list li{
@@ -92,11 +101,11 @@ body,html{
     gap: 1em;
     justify-content: center;
     align-items: center;
+    color:#e5e4e4;
 }
 .skill-list{
     display: flex;
     gap: 2em;
-    margin-left: 1em;
     justify-content: center;
     align-items: center;
     text-align: center;
