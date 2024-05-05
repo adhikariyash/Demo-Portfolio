@@ -14,7 +14,7 @@ body{
 }
 .navbar{
     display:flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
     position: sticky;
     padding: 20px;
@@ -28,7 +28,7 @@ body{
 }
 .navlist li a{
     text-decoration: none;
-    font-size: clamp(1.1rem, 2.5vw, 2rem); 
+    font-size: clamp(1.3rem, 2.5vw, 2rem); 
     color:white;
     background-color: rgba(40, 36, 36, 0.208);
     padding: 0.3em 1.2em;
@@ -163,13 +163,26 @@ body{
         flex-direction: column;
         gap: 0.3rem;
     }
+    .navlist{
+        gap: 0.5rem;
+    }
+    .navlist li a{
+        
+        font-size: 1rem;
+    }
 }
-@media (max-width: 295px){
+@media (max-width: 300px){
     .indexImg img{
-        height: 15rem;
-        width: 15rem;
+        height: 10rem;
+        width: 10rem;
     }
     .information p{
+        font-size: 0.8rem;
+    }
+    .navlist{
+        gap: 0.3rem;
+    }
+    .navlist li a{
         font-size: 0.8rem;
     }
 }
