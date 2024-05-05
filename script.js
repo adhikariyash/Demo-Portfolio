@@ -1,9 +1,8 @@
 let closeNav = document.getElementById('closeNav');
 let openbtn = document.getElementById('open');
 let closebtn = document.getElementById('close');
-let body = document.getElementById('body');
-let main = document.getElementById('main');
-let project = document.getElementById('project');
+
+
 
 openbtn.addEventListener("click", function(){
   openbtn.style.display = "block";
