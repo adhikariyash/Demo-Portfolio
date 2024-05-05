@@ -19,7 +19,7 @@
     </header>
 
     <main>
-        <div class="container">
+        <section class="container">
             <div class="information">
                 <h1>Hi, I am  <span class="high"> Yash</span>.</h1>
                 <p>Entering the world of web development, eager to learn and contribute. Proficient in HTML, CSS, and JavaScript, excited to embark on my journey of crafting dynamic and user-friendly websites.</p>
@@ -32,16 +32,69 @@
                 </div>
                 <div class="indexLinks">
                 <a href= "mailto:adhikariyash53@gmail.com" class="greeting">Say Hello!</a>
-            <a href= "project.html" class="greeting">My Recent Works</a>
+            <a href= "#project" class="greeting">My Recent Works</a>
         </div>
             </div>
-            <div class="indexImg">           
+            <div class="indexImg">          
                 <img src="imgs/baburam .jpg" alt="picture">
        </div>
-        </div>
+        </section>
            
+        <!-- projects -->
+
+   <section id="project" class="project">
+    <div class="projectMain">
+        <h1>My Recent Works</h1>
+        <div class="projects">
+        <div class="projectOne">
+            <a href="https://github.com/Baburam99/Calculator" target="_blank"><img src="imgs/calculator.jpg" alt="web calculator"> </a>
+            <h2>Web Calculator</h2>
+            <p>Html, CSS, and Java Script</p>
+        </div>
+        <div class="projectTwo">
+            <a href="https://github.com/Baburam99/contactForm" target="_blank"><img src="imgs/form.jpg" alt="contact form design"></a>
+            <h2>Contact Form</h2>
+            <p>Html, CSS, and Java script</p>
+        </div>
+        <div class="projectThree">
+            <a href="https://github.com/Baburam99/Number-guessing-Game" target="_blank"><img src="imgs/number.jpg" alt="number guessing game"></a>
+            <h2>Number guessing Game</h2>
+            <p>Html, CSS, and Java script </p>
+        </div>
+        <div class="projectFour">
+            <a href="https://github.com/Baburam99/Short-Game-in-Java-Script" target="_blank"><img src="imgs/stonePaperScissor.jpg" alt="stone paper scissor game"></a>
+            <h2>Stone Paper Scissor Game</h2>
+            <p>Html, CSS, and Java Script</p>
+        </div>
     </div>
+    </div>
+</main>
+
+
+
+
+
+
+   </section>
 
     </main>
+    <script>
+        let openNav = document.getElementById('openNav');
+      let closeNav = document.getElementById('closeNav');
+      let openbtn = document.getElementById('open');
+      let closebtn = document.getElementById('close');
+    
+      openbtn.addEventListener("click", function(){
+        openbtn.style.display = "none";
+        closebtn.style.display = "block";
+        closeNav.style.left = "30vw"; // Adjust the left position as needed
+      });
+    
+      closebtn.addEventListener("click", function(){
+        closebtn.style.display = "none";
+        openbtn.style.display = "block";
+        closeNav.style.left = "100vw"; // Adjust the left position to hide the navigation menu
+      });
+    </script>
 </body>
 </html>
