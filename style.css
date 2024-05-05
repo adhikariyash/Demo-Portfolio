@@ -299,56 +299,15 @@ font-size: clamp(0.6rem, 2.5vw, 1.5rem);
         grid-template-columns: repeat(1, 1fr)
     };
 }
-@media (max-width: 570px){
-    .navbar{
-        font-size: 0.9rem;
-        
-    }
-    .navlist li{
-        display: none;
-        text-decoration: none;
-    }
-    .hidden{
-        display:block;
-        text-align: center;
-       position: fixed;
-       left: 20em;
-       transition: all 0.4s ease-in;
-    }
-    .hidden li{
-        list-style-type: none;
-        padding: 2em;
-        margin-top: 5em;
-    }
-    .hidden li a{
-        text-decoration: none;
-        font-size: 2rem;
-        color:white;
-    }
 
-    .hidden li a:hover{
-        border-bottom: 3px solid rgb(255, 255, 255)
-        
-    }
-    .icons{
-        display: block;
-    }
-    .icons svg{
-        height: 2rem;
-        width: 2em;
-    }
-  #open{
-    display: block;
-  }
-   
-   
-}
+  
+    
 @media (max-width: 460px){
     .projects img{
         height: 10rem;
     }
     .left{
-        display: flex;
+    display: flex;
     gap:2rem;
     justify-content: start;
     align-items: center;
@@ -365,10 +324,7 @@ font-size: clamp(0.6rem, 2.5vw, 1.5rem);
     .left a{
         font-size: 0.7rem;
     }
-    .icons svg{
-        height: 1.5em;
-        padding: 0.4em
-    }
+   
 }
 .project{
     margin-top: 10em;
