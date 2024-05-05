@@ -28,6 +28,10 @@ body,html{
 .navlist li{
     list-style: none;
 }
+.skill-list li svg{
+    fill:white;
+    height: 2rem;
+}
 .navlist li a{
     text-decoration: none;
     font-size: clamp(1.3rem, 2.5vw, 2rem); 
@@ -83,11 +87,19 @@ body,html{
     width: 60ch;
  
 }
+.skill-list li{
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
 .skill-list{
     display: flex;
     gap: 2em;
     margin-left: 1em;
     justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .indexLinks{
     margin-top: 2em;
@@ -100,7 +112,7 @@ body,html{
     margin-top: 1em;
     border-radius: 7px;
     border:none;
-    background-color: rgba(12, 66, 228, 0.479);
+    background-color: rgba(12, 228, 52, 0.479);
     color:whitesmoke;
     font-size: 1em;
     cursor: pointer;
@@ -142,6 +154,9 @@ body,html{
   .indexImg img{
         height: 15rem;
         width: 15rem;
+    }
+    .skill-list li{
+        gap: 0.3em;
     }
     
 }
@@ -263,7 +278,7 @@ font-size: clamp(0.6rem, 2.5vw, 1.5rem);
     padding: 0.4em;
     z-index: 9;
 }
-.icons{
+.links{
     display: none;
 }
 #close {
@@ -277,12 +292,20 @@ font-size: clamp(0.6rem, 2.5vw, 1.5rem);
    position: fixed;
    height: 100vh;
    width: 70vw;
-   background-color: rgb(2, 8, 36);
-   align-items: center;
-   border-top-left-radius: 20px;
-   border-bottom: 20px;
+   background-color: rgb(4, 15, 61);
+   border-top-left-radius: 3em;
    overflow: hidden;
+   color:white;
+   transition: all 0.4s ease;
+ }
+.hidden li{
+    list-style: none;
+    margin-top: 3em;
 }
+.hidden li a{
+    text-decoration: none;
+    padding: 0.7em;
+    }
 .left{
     width: 90vw;
     display: flex;
@@ -300,6 +323,41 @@ font-size: clamp(0.6rem, 2.5vw, 1.5rem);
     };
 }
 
+@media(max-width: 590px){
+    .hidden{
+        display: block;
+        position: fixed;
+        left: 50em;
+        text-align: start;
+    }
+    .hidden li{
+       padding-top: 5em;
+    }
+    .hidden li a{
+        color:white;
+        font-size: 2rem;
+        text-align: center;
+    }
+   .navlist{
+    display: none;
+   }
+   #open{
+    display: block;
+   }
+   .links button svg{
+    display: block;
+    height: 3em;
+   }
+   .links{
+    display:block;
+    position: fixed;
+    z-index: 9;
+   }
+   .hidden li a:hover{
+    border-bottom: 3px solid whitesmoke;
+    transition: all 0.4s ease;
+   }
+}
   
     
 @media (max-width: 460px){
@@ -330,3 +388,5 @@ font-size: clamp(0.6rem, 2.5vw, 1.5rem);
     margin-top: 10em;
    
 }
+/* hidden navbar */
+
