@@ -445,6 +445,29 @@ font-size: clamp(0.6rem, 2.5vw, 1.5rem);
     .left a{
         font-size: 0.7rem;
     }
+    .skill-list{
+        display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       
+    }
+    .skill-list li{
+        text-align: start;
+    }
+    .information p{
+        width: 20ch;
+    }
+   
+}
+@media (max-width: 210px){
+    .skill-list{
+        display: grid;
+       grid-template-columns: repeat(1, 1fr);
+       
+    }
+    .skill-list li{
+      display: flex;
+      justify-content: start;
+    }
    
 }
 .project{
