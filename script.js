@@ -12,7 +12,7 @@ openbtn.addEventListener("click", function(){
 });
 
 closebtn.addEventListener("click", function(){
-  closebtn.style.display = "none";
+  closebtn.style.display = "block";
   openbtn.style.display = "block";
   closeNav.style.left = "100vw";
   overlay.style.display = "none";
