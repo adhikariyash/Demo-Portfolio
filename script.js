@@ -46,19 +46,6 @@ overlay.addEventListener("click", function(){
   closeNav.style.left = "100vw";
   overlay.style.display = "none";
 });
-//contact form
 
-let form = document.getElementById('form');
-let inputs = document.querySelectorAll('input');
-
-form.addEventListener("submit", async function(event) {
-   event.preventDefault();
-   await delay(300); 
-   form.reset();
-});
-
-async function delay(ms) {
-   return new Promise(resolve => setTimeout(resolve, ms));
-}
        
       
